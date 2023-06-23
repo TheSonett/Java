@@ -1,0 +1,30 @@
+
+import java.util.Random;
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        guessedNumber();
+    }
+
+    public static void guessedNumber() {
+        try (Scanner input = new Scanner(System.in)) {
+            boolean isGuessed = false;
+            do {
+                System.out.println("Guess the number between 1 to 5");
+                int myNumber = input.nextInt();
+                int randomNumber = new Random().nextInt(5) + 1;
+
+                if (randomNumber == myNumber) {
+                    System.out.println("You guessed the correct number!!");
+                    isGuessed = true;
+                    break;
+                }
+
+                System.out.println("You guessed number is incorrect!!");
+                System.out.println("You correct number is: " + randomNumber);
+            }
+            while(!isGuessed);
+        }
+    }
+}
