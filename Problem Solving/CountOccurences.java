@@ -17,9 +17,9 @@ public class CountOccurences {
                 map.put(c, 1);
             }
         }
-        
-        for(Character key : map.keySet()) {
-            System.out.print(map.get(key)+ "" + key);
+
+        for(Map.Entry<Character, Integer> e : map.entrySet()) {
+            System.out.print(e.getKey() + "" + e.getValue());
         }
     }
 }

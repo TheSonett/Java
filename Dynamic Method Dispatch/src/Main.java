@@ -1,6 +1,7 @@
 // Dynamic Method Dispatch or Runtime Polymorphism in Java
 // NOTES:
-// 1. Variables in Java do not follow Polymorphism. Overriding is only applicable to methods but not to variables.
+// 1. Variables in Java do not follow Polymorphism. Overriding is only applicable to methods but not to 
+// variables.
 
 
 public class Main {
@@ -18,9 +19,5 @@ public class Main {
 		Laptop obj2 = new Laptop();
 		obj2.show();
 		System.out.println(obj2.x);
-		
-		
-		
-	
 	}
 }
