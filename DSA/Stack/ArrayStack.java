@@ -1,3 +1,5 @@
+package Stack;
+
 public class ArrayStack {
     static int[] stack;
     static int top = 0;
