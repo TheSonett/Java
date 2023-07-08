@@ -1,5 +1,4 @@
 // The object of a JTextField class is a text component that allows the editing of a single line text.
-// 
 
 import javax.swing.*;
 import java.awt.event.*;
@@ -16,7 +15,7 @@ class Calculator {
 
     public Calculator() {
         window = new JFrame("Calculator App", null);
-        window.setSize(300, 300);
+        window.setSize(500, 500);
         window.setVisible(true);
         window.setLayout(null);
         //window.setResizable(false);
@@ -58,8 +57,15 @@ class Calculator {
             }
         });
 
+        JLabel label = new JLabel();
+        label.setBounds(50,300,250,250);
+        JTextArea area = new JTextArea();
+        area.setBounds(10,30, 200,200);  
+        label.add(area);
+
 
         // adding components
+        window.add(label);
         window.add(firstField);
         window.add(secondField);
         window.add(resultField);
