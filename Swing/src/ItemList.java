@@ -17,7 +17,7 @@ public class ItemList {
         scrollPane.setViewportView(list);
         list.setLayoutOrientation(JList.VERTICAL);
         panel.add(scrollPane);
-        
+
         JFrame frame = new JFrame("Demo");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(panel);

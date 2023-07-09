@@ -30,8 +30,8 @@ public class CheckBoxes {
                 display.setText("You have " + (state == 1 ? "checked " : "unchecked ") + checkBox1.getText());
 
                 if (state == 1)
-                    checkBox2.setEnabled(false); 
-                else 
+                    checkBox2.setEnabled(false);
+                else
                     checkBox2.setEnabled(true);
             }
         });
@@ -46,8 +46,8 @@ public class CheckBoxes {
                     display.setText("You have unchecked " + checkBox2.getText());
 
                 if (state == 1)
-                    checkBox1.setEnabled(false); 
-                else 
+                    checkBox1.setEnabled(false);
+                else
                     checkBox1.setEnabled(true);
             }
         });

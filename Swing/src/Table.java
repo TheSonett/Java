@@ -7,10 +7,10 @@ class Student {
     private JTable table;
 
     private String[][] students = {
-        {"1", "Joy Saha", "05"},
-        {"2", "Rahul Dey", "10"},
-        {"3", "Sumit Das", "12"},
-        {"4", "Washim Aqram", "04"}
+            {"1", "Joy Saha", "05"},
+            {"2", "Rahul Dey", "10"},
+            {"3", "Sumit Das", "12"},
+            {"4", "Washim Aqram", "04"}
     };
 
     private String[] headers = {"ID", "NAME", "ROLL-NO"};
@@ -33,7 +33,7 @@ class Student {
                 System.out.println("You selected: " + data);
             }
         });
-        
+
         JScrollPane sp = new JScrollPane(table);
         frame = new JFrame("Student Database", null);
         frame.add(sp);

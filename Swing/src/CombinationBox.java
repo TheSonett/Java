@@ -8,7 +8,7 @@ public class CombinationBox {
         String[] languages = {"C++", "Java", "C#", "Python", "C", "Rust"};
         JComboBox<String> comboBox = new JComboBox<>(languages);
         comboBox.setBounds(100, 30, 100, 20);
-        
+
         JLabel label = new JLabel();
         label.setBounds(220, 30, 180, 20);
 
@@ -17,14 +17,14 @@ public class CombinationBox {
                 String msg = "You have selected: " + comboBox.getSelectedItem();
                 label.setText(msg);
             }
-            
+
         });
 
         JPanel panel = new JPanel(null);
         JFrame frame = new JFrame("Combo Example");
         panel.add(comboBox);
         panel.add(label);
-        
+
         frame.add(panel);
         frame.setSize(400, 400);
         frame.setContentPane(panel);

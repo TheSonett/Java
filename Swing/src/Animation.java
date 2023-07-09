@@ -13,14 +13,14 @@ class Panel implements ActionListener {
 
     protected int x_velocity = 3;
     protected int y_velocity = 3;
-    
+
     private Timer timer;
     private final int PANEL_WIDTH = 600;
     private final int PANEL_HEIGHT = 460;
-    
+
     public Panel() {
-        enemy = new ImageIcon("character_0014.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
-        background = new ImageIcon("background_0010.png").getImage().getScaledInstance(PANEL_WIDTH, PANEL_HEIGHT, Image.SCALE_SMOOTH);
+        enemy = new ImageIcon("./src/character_0014.png").getImage().getScaledInstance(50, 50, Image.SCALE_SMOOTH);
+        background = new ImageIcon("./src/background_0010.png").getImage().getScaledInstance(PANEL_WIDTH, PANEL_HEIGHT, Image.SCALE_SMOOTH);
 
         panel = new JPanel() {
             @Override
@@ -42,7 +42,7 @@ class Panel implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-         if(x_position > PANEL_WIDTH - enemy.getWidth(null) || x_position < 0) {
+        if(x_position > PANEL_WIDTH - enemy.getWidth(null) || x_position < 0) {
             x_velocity *= -1;
         }
 
@@ -75,6 +75,6 @@ class Window extends Panel {
 
 public class Animation {
     public static void main(String[] args) {
-       new Window();
+        new Window();
     }
 }

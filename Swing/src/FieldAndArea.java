@@ -60,7 +60,7 @@ class Calculator {
         JLabel label = new JLabel();
         label.setBounds(50,300,250,250);
         JTextArea area = new JTextArea();
-        area.setBounds(10,30, 200,200);  
+        area.setBounds(10,30, 200,200);
         label.add(area);
 
 
@@ -76,6 +76,6 @@ class Calculator {
 
 public class FieldAndArea {
     public static void main(String[] args) {
-        new Calculator();            
+        new Calculator();
     }
 }
