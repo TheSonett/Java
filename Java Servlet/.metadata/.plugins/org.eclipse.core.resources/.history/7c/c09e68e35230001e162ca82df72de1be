@@ -1,0 +1,5 @@
+package com.alien.models;
+
+public class Alien {
+	
+}

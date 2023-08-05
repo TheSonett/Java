@@ -1,0 +1,18 @@
+package com.joy.SpringFramework_1;
+
+import org.springframework.context.ApplicationContext;
+
+/**
+ * Hello world!
+ *
+ */
+public class App 
+{
+    public static void main( String[] args )
+    {
+    	ApplicationContext
+    	
+    	Vehicle obj = getBean("vehicle"); //Vehicle obj = new Car();
+        obj.drive();
+    }
+}

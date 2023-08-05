@@ -1,0 +1,32 @@
+package com.login;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@SuppressWarnings("serial")
+@WebServlet("/LoginServlet")
+public class LoginServlet extends HttpServlet {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) 
+			throws IOException {
+		
+		String username = request.getParameter("username");
+		String password = request.getParameter("password");
+		
+		// login validation
+		if(username.equals("root") && password.equals("root")) {
+			HttpSession session = request.getSession();
+			
+			response.sendRedirect("index.jsp");
+		}
+		else {
+			PrintWriter out = response.getWriter();
+			out.println("Login failed!!");			
+		}
+		
+	}
+}

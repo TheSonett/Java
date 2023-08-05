@@ -1,0 +1,17 @@
+package com.sonett;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+import jakarta.servlet.http.HttpServletRequest;
+
+@Controller
+public class AddController {
+	@RequestMapping("/add")
+	public String add(HttpServletRequest request, HttpServletRequest response) {
+		int a = Integer.parseInt(request.getParameter("num1"));
+		int b = Integer.parseInt(request.getParameter("num2"));
+		int 
+		return "display.jsp";
+	}
+}

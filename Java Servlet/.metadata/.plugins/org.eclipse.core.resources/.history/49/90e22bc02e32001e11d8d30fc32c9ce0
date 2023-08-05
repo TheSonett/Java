@@ -1,0 +1,10 @@
+package com.sonett;
+
+import org.springframework.stereotype.Controller;
+
+@Controller
+public class AddController {
+	public void add() {
+		System.out.println("In add function");
+	}
+}

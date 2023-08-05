@@ -1,0 +1,14 @@
+package com.sonett;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class AddController {
+	@RequestMapping("/add")
+	public String add() {
+		int a = request.getParameter("num1");
+		int b = request.getParameter("num2");
+		return "display.jsp";
+	}
+}

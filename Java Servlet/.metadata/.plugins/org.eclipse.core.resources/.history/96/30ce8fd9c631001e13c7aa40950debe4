@@ -1,0 +1,11 @@
+package com.joy.AnnotationSpring;
+
+
+public class App 
+{
+    public static void main(String[] args)
+    {
+    	Person obj = new Person();
+    	
+    }
+}

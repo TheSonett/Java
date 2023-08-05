@@ -1,0 +1,14 @@
+package com.sonett.learn.spring_1;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class Application {
+
+	public static void main(String[] args) {
+		var game = new MarioGame();
+		GameRunner runner = new GameRunner(game);
+	}
+
+}

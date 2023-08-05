@@ -1,0 +1,11 @@
+<html>
+<body>
+
+<form action="AddController">
+	<input type="text" name="num1">
+	<input type="text" name="num2">
+	<input type="submit" value="submit">
+</form>
+
+</body>
+</html>

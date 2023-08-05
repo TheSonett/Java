@@ -1,0 +1,20 @@
+package com.alien.servlets;
+
+import com.alien.dao.AlienDao;
+import com.alien.models.Alien;
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+
+@SuppressWarnings("serial")
+@WebServlet("/AlienServlet")
+public class AlienServlet extends HttpServlet {
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) {
+		int id = Integer.parseInt(request.getParameter("id"));
+		
+		AlienDao dao = new AlienDao();
+		Alien alien = dao.getAlien(id);
+	}
+}

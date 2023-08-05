@@ -1,0 +1,22 @@
+package com.alien.dao;
+
+import com.alien.models.Alien;
+
+public class AlienDao {
+	public Alien getAlien(int id) {
+		Alien alien = new Alien();
+		alien.setId(id);
+		alien.setName("Joy");
+		alien.setTech("Java");
+	
+		
+		try {
+			
+		}
+		catch(Exception e) {
+			System.out.println();
+		}
+	}
+	
+	
+}

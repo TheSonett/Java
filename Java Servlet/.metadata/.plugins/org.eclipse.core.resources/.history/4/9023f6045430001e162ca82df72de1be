@@ -1,0 +1,7 @@
+package com.alien.dao;
+
+public class AlienDao {
+	public Alien getAlien() {
+		
+	}
+}

@@ -1,0 +1,25 @@
+package com.alien.dao;
+
+import java.sql.DriverManager;
+
+import com.alien.models.Alien;
+
+public class AlienDao {
+	public Alien getAlien(int id) {
+		Alien alien = new Alien();
+		alien.setId(id);
+		alien.setName("Joy");
+		alien.setTech("Java");
+	
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3308/mydatabase", "root", "");
+		}
+		catch(Exception e) {
+			System.out.println(e.getStackTrace());
+		}
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+package com.login;
+
+@WebServlet("/LoginServlet")
+public class LoginServlet {
+
+}

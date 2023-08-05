@@ -64,10 +64,10 @@ class Window extends Panel {
         frame = new JFrame("2D Animation");
 
         frame.add(panel);
+        frame.setSize(600, 480);
         frame.setLocationRelativeTo(null);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setResizable(false);
-        frame.pack();
         frame.setVisible(true);
     }
 }

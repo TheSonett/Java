@@ -1,0 +1,6 @@
+package com.sonett.learn.spring_1.game;
+
+public class MarioGame 
+{
+	public void up() { System.out.println("Going up!"); }
+}

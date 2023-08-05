@@ -1,0 +1,22 @@
+package com.alien.models;
+
+public class Alien {
+	private int id;
+	private String name;
+	private String tech;
+	
+	public Alien() {}
+	
+	public void setId(int id) { this.id = id; }
+	public void setName(String name) { this.name = name; }
+	public void setTech(String tech) { this.tech = tech; }
+	
+	public int getId() { return id; }
+	public String getName() { return name; }
+	public String getTech() { return tech; }
+	
+	@Override
+	public String toString() {
+		return id + " , " + name + " , " + tech;
+	}
+}

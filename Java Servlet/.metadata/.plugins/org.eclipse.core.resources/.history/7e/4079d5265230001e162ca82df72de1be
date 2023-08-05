@@ -1,0 +1,10 @@
+package com.alien.servlets;
+
+
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+
+@WebServlet("/AlienServlet")
+public class AlienServlet extends HttpServlet {
+	
+}

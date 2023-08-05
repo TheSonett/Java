@@ -1,0 +1,5 @@
+package com.sonett.learn.spring_1;
+
+public interface GameManage {
+	
+}

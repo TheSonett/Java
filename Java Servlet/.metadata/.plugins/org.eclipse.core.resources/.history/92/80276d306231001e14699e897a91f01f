@@ -1,0 +1,10 @@
+package com.joy.SpringFramework_1;
+
+@Component
+public class Car implements Vehicle
+{
+	public void drive()
+	{
+		System.out.println("Car is moving forward....");
+	}
+}

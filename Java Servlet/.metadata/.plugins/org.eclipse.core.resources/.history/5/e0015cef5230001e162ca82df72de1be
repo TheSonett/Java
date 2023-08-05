@@ -1,0 +1,6 @@
+package com.alien.models;
+
+public class Alien {
+	private int id;
+	private String name;
+}
