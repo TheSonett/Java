@@ -3,4 +3,8 @@
     <fullyQualifiedTypeName name="com.sonett.learn.spring_1.game.Pacman"/>
     <fullyQualifiedTypeName name="com.sonett.learn.spring_1.GameManage"/>
     <fullyQualifiedTypeName name="com.sonett.learn.spring_1.game.MarioGame"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
+    <fullyQualifiedTypeName name="org.springframework.context.annotation.AnnotationConfigApplicationContext"/>
+    <fullyQualifiedTypeName name="com.sonett.learn.spring_1.config.SpringApplication01Config"/>
 </qualifiedTypeNameHistroy>
