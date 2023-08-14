@@ -12,6 +12,11 @@ public class CourseRepoRunner implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		courseRepository.insert();
+		courseRepository.delete(2);
+		
+		System.out.println(courseRepository.getCourseById(1));
+		System.out.println(courseRepository.getCourseById(3));
+		System.out.println(courseRepository.showTable());
 	}
 
 }
