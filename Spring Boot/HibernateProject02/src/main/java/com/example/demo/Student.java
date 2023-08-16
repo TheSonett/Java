@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.FetchType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
@@ -21,7 +22,7 @@ public class Student {
 //	@OneToOne
 //	private Laptop laptop;
 	
-	@OneToMany(mappedBy = "student")
+	@OneToMany(mappedBy = "student", fetch = FetchType.EAGER)
 	private List<Laptop> laptops = new ArrayList<>();
 	
 	public Student() {}
