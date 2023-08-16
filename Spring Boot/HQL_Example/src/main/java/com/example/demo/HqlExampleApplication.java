@@ -70,7 +70,6 @@ public class HqlExampleApplication {
 			System.out.println(s[0] + " : " + s[1] + " : " + s[2]);			
 		}
 		
-		
 		session.getTransaction().commit();
 	}
 
